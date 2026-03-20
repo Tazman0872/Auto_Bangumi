@@ -66,7 +66,7 @@ class Checker:
             return True
 
         try:
-            prefix =  "http" if settings.downloader.ssl else "https"
+            prefix =  "https" if settings.downloader.ssl else "http"
             url = (
                 f"{prefix}://{settings.downloader.host}"
                 if "://" not in settings.downloader.host
